@@ -6,6 +6,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { FontAwesome5 } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
 import logo from "../../assets/sp_logo.png";
+import { Feather } from "@expo/vector-icons";
 
 import styles from "./styles";
 
@@ -28,18 +29,27 @@ const Profile = (props) => {
         <Image style={styles.logo} source={logo} />
       </View>
       <Text style={styles.title}>Hello Erica Xue!</Text>
-      <FontAwesome5 name="user-circle" size={24} color="black" />
-      <Text>erica_xue</Text>
-      <Text>erica.xue@sjsu.edu</Text>
+      <Feather name="user" size={150} color="black" />
+      <Text style={styles.info}>Erica_Xue</Text>
+      <Text style={styles.info}>erica.xue@sjsu.edu</Text>
 
-      <TouchableOpacity onPress={dummyLogin} style={styles.logout}>
-        <Text>Logout</Text>
-        <MaterialIcons name="logout" size={24} color="black" />
-      </TouchableOpacity>
+      <View style={styles.logout}>
+        <TouchableOpacity onPress={dummyLogin} style={styles.log}>
+          <Text style={styles.logText}> Logout</Text>
+          <MaterialIcons
+            style={styles.logIcon}
+            name="logout"
+            size={25}
+            color="black"
+          />
+        </TouchableOpacity>
+      </View>
 
-      <TouchableOpacity onPress={dummySignup} style={styles.delete}>
-        <Text>Delete Account</Text>
-      </TouchableOpacity>
+      <View style={styles.delete}>
+        <TouchableOpacity onPress={dummySignup} style={styles.del}>
+          <Text style={styles.delText}> Delete Account</Text>
+        </TouchableOpacity>
+      </View>
     </SafeAreaView>
   );
 };

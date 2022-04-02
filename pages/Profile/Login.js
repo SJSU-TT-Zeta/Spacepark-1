@@ -26,29 +26,47 @@ const Login = (props) => {
       <View style={styles.header}>
         <Image style={styles.logo} source={logo} />
       </View>
-      <Text style={styles.title}>Login</Text>
       <View style={styles.content}>
-        <View style={styles.formItem}>
-          <Text style={styles.formText}>Username</Text>
-          <View>
-            <TextInput
-              style={styles.formInput}
-              placeholder={"Why hello there"}
-            />
+        <Text style={styles.titleLog}>Login</Text>
+        <View style={styles.cont}>
+          <View style={styles.formItem}>
+            <View style={styles.formItem1}>
+              <Text style={styles.formText}>Username</Text>
+            </View>
+            <View style={styles.formItem2}>
+              <TextInput
+                style={styles.formInput}
+                placeholder={"Enter Username"}
+              />
+            </View>
+          </View>
+          <View style={styles.formItem}>
+            <View style={styles.formItem1}>
+              <Text style={styles.formText}>Password</Text>
+            </View>
+            <View style={styles.formItem2}>
+              <TextInput
+                style={styles.formInput}
+                placeholder={"Enter Password"}
+              />
+            </View>
+          </View>
+          <View style={styles.formItem}>
+            <View style={styles.formItem1}></View>
+            <View style={styles.formItem2}>
+              <View style={styles.buttonHelper}>
+                <TouchableOpacity onPress={dummyLogin} style={styles.button}>
+                  <Text style={styles.buttonLogin}>Login</Text>
+                </TouchableOpacity>
+              </View>
+            </View>
           </View>
         </View>
-        <View>
-          <Text style={styles.formText}>Password</Text>
-          <TextInput style={styles.formInput} placeholder={"Why hello there"} />
-        </View>
-        <TouchableOpacity onPress={dummyLogin} style={styles.button}>
-          <Text style={styles.buttonText}>Login</Text>
+        <Text style={styles.signQ}>Don't have an account yet?</Text>
+        <TouchableOpacity onPress={dummySignup}>
+          <Text style={styles.signUp}>Sign Up</Text>
         </TouchableOpacity>
       </View>
-      <Text style={styles.signQ}>Don't have an account yet?</Text>
-      <TouchableOpacity onPress={dummySignup}>
-        <Text style={styles.signUp}>Sign Up</Text>
-      </TouchableOpacity>
     </SafeAreaView>
   );
 };
