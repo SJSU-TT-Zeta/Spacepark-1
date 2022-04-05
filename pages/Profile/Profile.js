@@ -6,7 +6,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { FontAwesome5 } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
 import logo from "../../assets/sp_logo.png";
-import { Feather } from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons";
 
 import styles from "./styles";
 
@@ -29,7 +29,7 @@ const Profile = (props) => {
         <Image style={styles.logo} source={logo} />
       </View>
       <Text style={styles.title}>Hello Erica Xue!</Text>
-      <Feather name="user" size={150} color="black" />
+      <Ionicons name="person" size={135} color="black" />
       <Text style={styles.info}>Erica_Xue</Text>
       <Text style={styles.info}>erica.xue@sjsu.edu</Text>
 

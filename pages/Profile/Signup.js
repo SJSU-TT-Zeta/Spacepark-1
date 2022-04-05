@@ -27,14 +27,14 @@ const Login = (props) => {
         <Ionicons name="chevron-back" size={24} color="black" />
         <Image style={styles.logo} source={logo} />
       </View>
-      <Text style={styles.title}>Sign Up</Text>
+      <Text style={styles.titleSign}>Sign Up</Text>
       <View style={styles.content}>
         <View style={styles.formItem}>
           <Text style={styles.formText}>Email</Text>
           <View>
             <TextInput
-              style={styles.formInput}
-              placeholder={"Why hello there"}
+              style={styles.userInput1}
+              placeholder={"Enter email"}
             />
           </View>
         </View>
@@ -43,24 +43,25 @@ const Login = (props) => {
           <Text style={styles.formText}>Username</Text>
           <View>
             <TextInput
-              style={styles.formInput}
-              placeholder={"Why hello there"}
+              style={styles.userInput2}
+              placeholder={"Enter username"}
             />
           </View>
         </View>
 
         <View style={styles.formItem}>
-          <Text style={styles.formText}>Password</Text>
-          <TextInput style={styles.formInput} placeholder={"Why hello there"} />
+          <Text style={styles.formText1}>Password</Text>
+          <TextInput style={styles.passInput1} placeholder={"Enter password"} />
         </View>
 
         <View style={styles.formItem}>
-          <Text style={styles.formText}>Confirm Password</Text>
-          <TextInput style={styles.formInput} placeholder={"Why hello there"} />
+          <Text style={styles.formText2}>Confirm</Text>
+          <Text style={styles.formText3}>Password</Text>
+          <TextInput style={styles.passInput2} placeholder={"Re-enter password"} />
         </View>
 
-        <TouchableOpacity onPress={dummySignup} style={styles.button}>
-          <Text style={styles.buttonText}>Sign Up</Text>
+        <TouchableOpacity onPress={dummySignup} style={styles.buttonSign}>
+          <Text style={styles.buttonText1}>Sign Up</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
