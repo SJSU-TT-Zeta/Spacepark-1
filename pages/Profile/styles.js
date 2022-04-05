@@ -24,6 +24,10 @@ const styles = StyleSheet.create({
     marginRight: 8,
     marginTop: 13,
   },
+  back: {
+    marginTop: 13,
+    marginLeft: 8,
+  },
   formInput: {
     width: 300,
     height: 70,
@@ -112,7 +116,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     width: "100%",
   },
-  titleLog: {
+  title: {
     fontSize: 28,
     marginBottom: 30,
   },
@@ -144,13 +148,13 @@ const styles = StyleSheet.create({
   formItem2: {
     width: "70%",
   },
+  formItem3: {
+    width: "70%",
+    marginLeft: "auto",
+  },
   buttonHelper: {
     width: "90%",
     marginRight: "auto",
-  },
-  titleSign: {
-    fontSize: 28,
-    marginTop: "auto",
   },
   userInput1: {
     width: "90%",
@@ -174,20 +178,19 @@ const styles = StyleSheet.create({
   },
   buttonText1: {
     fontSize: 20,
-    marginTop: 10,
-    marginLeft: 15,
-    marginRight: 15,
-    borderRadius: 10,
-    width: 70,
-    height: 35,
+    alignSelf: "center",
     color: "#FFFFFF",
+    marginTop: "auto",
+    marginBottom: "auto",
   },
   buttonSign: {
     fontSize: 20,
     marginTop: 10,
-    marginLeft: "63%",
+    marginLeft: "auto",
     borderRadius: 10,
     backgroundColor: "#15AB69",
+    width: 130,
+    height: 50,
   },
   formText1: {
     marginLeft: "1%",

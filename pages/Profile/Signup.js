@@ -24,45 +24,63 @@ const Login = (props) => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
-        <Ionicons name="chevron-back" size={24} color="black" />
+        <TouchableOpacity onPress={dummySignup} style={styles.back}>
+          <Ionicons name="chevron-back" size={38} color="black" />
+        </TouchableOpacity>
         <Image style={styles.logo} source={logo} />
       </View>
-      <Text style={styles.titleSign}>Sign Up</Text>
       <View style={styles.content}>
+        <Text style={styles.title}>Sign Up</Text>
         <View style={styles.formItem}>
-          <Text style={styles.formText}>Email</Text>
-          <View>
+          <View style={styles.formItem1}>
+            <Text style={styles.formText}>Email</Text>
+          </View>
+          <View style={styles.formItem2}>
+            <TextInput style={styles.formInput} placeholder={"Enter Email"} />
+          </View>
+        </View>
+        <View style={styles.formItem}>
+          <View style={styles.formItem1}>
+            <Text style={styles.formText}>Username</Text>
+          </View>
+          <View style={styles.formItem2}>
             <TextInput
-              style={styles.userInput1}
-              placeholder={"Enter email"}
+              style={styles.formInput}
+              placeholder={"Enter Username"}
             />
           </View>
         </View>
-
         <View style={styles.formItem}>
-          <Text style={styles.formText}>Username</Text>
-          <View>
+          <View style={styles.formItem1}>
+            <Text style={styles.formText}>Password</Text>
+          </View>
+          <View style={styles.formItem2}>
             <TextInput
-              style={styles.userInput2}
-              placeholder={"Enter username"}
+              style={styles.formInput}
+              placeholder={"Enter Password"}
             />
           </View>
         </View>
-
         <View style={styles.formItem}>
-          <Text style={styles.formText1}>Password</Text>
-          <TextInput style={styles.passInput1} placeholder={"Enter password"} />
+          <View style={styles.formItem1}>
+            <Text style={styles.formText}>Confirm Password</Text>
+          </View>
+          <View style={styles.formItem2}>
+            <TextInput
+              style={styles.formInput}
+              placeholder={"Re-enter Password"}
+            />
+          </View>
         </View>
-
         <View style={styles.formItem}>
-          <Text style={styles.formText2}>Confirm</Text>
-          <Text style={styles.formText3}>Password</Text>
-          <TextInput style={styles.passInput2} placeholder={"Re-enter password"} />
+          <View style={styles.formItem3}>
+            <View style={styles.buttonHelper}>
+              <TouchableOpacity onPress={dummySignup} style={styles.buttonSign}>
+                <Text style={styles.buttonText1}>Sign Up</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
         </View>
-
-        <TouchableOpacity onPress={dummySignup} style={styles.buttonSign}>
-          <Text style={styles.buttonText1}>Sign Up</Text>
-        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );

@@ -27,7 +27,7 @@ const Login = (props) => {
         <Image style={styles.logo} source={logo} />
       </View>
       <View style={styles.content}>
-        <Text style={styles.titleLog}>Login</Text>
+        <Text style={styles.title}>Login</Text>
         <View style={styles.cont}>
           <View style={styles.formItem}>
             <View style={styles.formItem1}>
@@ -52,8 +52,7 @@ const Login = (props) => {
             </View>
           </View>
           <View style={styles.formItem}>
-            <View style={styles.formItem1}></View>
-            <View style={styles.formItem2}>
+            <View style={styles.formItem3}>
               <View style={styles.buttonHelper}>
                 <TouchableOpacity onPress={dummyLogin} style={styles.button}>
                   <Text style={styles.buttonLogin}>Login</Text>
