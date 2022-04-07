@@ -13,24 +13,24 @@ const Login = (props) => {
     // Check if user is logged in
   }, []);
 
-  const dummyLogin = () => {
-    props.navigation.navigate("Profile");
+  const psuedoLogin = () => {
+    props.navigation.navigate("ProfileView");
   };
 
-  const dummySignup = () => {
-    props.navigation.navigate("Profile");
+  const psuedoSignup = () => {
+    props.navigation.navigate("ProfileView");
   };
 
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
-        <TouchableOpacity onPress={dummySignup} style={styles.back}>
-          <Ionicons name="chevron-back" size={38} color="black" />
+        <TouchableOpacity onPress={psuedoSignup} style={styles.back}>
+          <Ionicons name="chevron-back" size={38} color="#2E2E2E" />
         </TouchableOpacity>
         <Image style={styles.logo} source={logo} />
       </View>
       <View style={styles.content}>
-        <Text style={styles.title}>Sign Up</Text>
+        <Text style={styles.titleTwo}>Sign Up</Text>
         <View style={styles.formItem}>
           <View style={styles.formItem1}>
             <Text style={styles.formText}>Email</Text>
@@ -75,7 +75,10 @@ const Login = (props) => {
         <View style={styles.formItem}>
           <View style={styles.formItem3}>
             <View style={styles.buttonHelper}>
-              <TouchableOpacity onPress={dummySignup} style={styles.buttonSign}>
+              <TouchableOpacity
+                onPress={psuedoSignup}
+                style={styles.buttonSign}
+              >
                 <Text style={styles.buttonText1}>Sign Up</Text>
               </TouchableOpacity>
             </View>

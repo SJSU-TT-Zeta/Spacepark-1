@@ -8,14 +8,15 @@ const styles = StyleSheet.create({
     backgroundColor: "#F7F8FA",
     height: "100%",
   },
+  profileWrap: {
+    marginTop: "2%",
+    flexDirection: "column",
+    alignItems: "center",
+  },
   header: {
     height: 60,
     width: "100%",
     flexDirection: "row",
-  },
-  headerItem: {
-    marginLeft: 10,
-    marginRight: 10,
   },
   logo: {
     width: 38,
@@ -62,52 +63,29 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
   logout: {
-    width: 200,
-    height: 50,
     marginTop: "auto",
     marginBottom: "auto",
   },
-  log: {
-    width: "100%",
-    height: "100%",
+  logoutWrap: {
     flexDirection: "row",
     alignItems: "center",
-    marginRight: "auto",
   },
   logIcon: {
-    marginRight: "auto",
     marginLeft: 8,
   },
   logText: {
-    marginTop: "auto",
-    marginBottom: "auto",
-    fontSize: 20,
-    marginLeft: "auto",
+    fontSize: 22,
   },
   delete: {
-    width: 200,
-    height: 50,
-    marginTop: "auto",
-    marginBottom: 10,
+    marginBottom: 12,
   },
   del: {
-    width: "100%",
-    height: "100%",
     flexDirection: "column",
     alignItems: "center",
   },
   delText: {
-    marginTop: "auto",
     fontSize: 20,
     color: "#E41919",
-  },
-  title: {
-    fontSize: 25,
-    marginTop: 10,
-  },
-  info: {
-    fontSize: 18,
-    marginTop: 20,
   },
   content: {
     marginTop: "auto",
@@ -117,8 +95,16 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   title: {
-    fontSize: 28,
-    marginBottom: 30,
+    fontSize: 26,
+    marginBottom: 5,
+  },
+  titleTwo: {
+    fontSize: 26,
+    marginBottom: 25,
+  },
+  text: {
+    fontSize: 20,
+    marginTop: 16,
   },
   formItem: {
     width: Dimensions.get("window").width,
@@ -184,7 +170,6 @@ const styles = StyleSheet.create({
     marginBottom: "auto",
   },
   buttonSign: {
-    fontSize: 20,
     marginTop: 10,
     marginLeft: "auto",
     borderRadius: 10,
@@ -207,27 +192,6 @@ const styles = StyleSheet.create({
     marginTop: "0.4%",
     marginBottom: "auto",
     paddingLeft: 175,
-  },
-  passInput1: {
-    width: "60.5%",
-    marginRight: "15%",
-    borderWidth: 2,
-    borderColor: "#15AB69",
-    height: "100%",
-    borderRadius: 10,
-    paddingLeft: "auto",
-    paddingRight: "30%",
-    marginLeft: -18,
-  },
-  passInput2: {
-    width: "60.5%",
-    marginRight: "7%",
-    borderWidth: 2,
-    borderColor: "#15AB69",
-    height: "100%",
-    borderRadius: 10,
-    paddingLeft: "auto",
-    paddingRight: "30%",
   },
   formText3: {
     marginLeft: "auto",
