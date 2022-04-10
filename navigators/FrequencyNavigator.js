@@ -8,9 +8,9 @@ const Stack = createStackNavigator();
 
 const FrequencyStackNavigator = () => {
   return (
-    <Stack.Navigator initialRouteName="Frequency">
+    <Stack.Navigator initialRouteName="FrequencyView">
       <Stack.Screen
-        name="Frequency"
+        name="FrequencyView"
         component={Frequency}
         options={{ headerShown: false, gestureEnabled: false }}
       />
